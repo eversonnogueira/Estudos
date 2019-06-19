@@ -3,3 +3,4 @@ Lógica de Programação.
 HTML5.
 CSS.
 JavaScript.
+Python.
