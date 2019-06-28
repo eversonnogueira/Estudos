@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Condição Composta</title>
+    <style>
+    /*body {
+        background: rebeccapurple;
+        color: rgb(99, 19, 19)*/
+    }
+    </style>
+</head>
+<body>
+    <h1>Sobre Sua Nacionalidade</h1>
+    Nacionalidade do Indivíduo <input type="text" name="txtnac" id="txtnac">
+    <input type="button" value="Verificar" onclick="definir()"> 
+    <div id="res">
+
+    </div>
+    <script> {
+        function definir() {
+            var txtv = document.querySelector('input#txtnac')
+            var res = document.querySelector('div#res')
+            var nac = txtnac.value
+            res.innerHTML = `<p>Vivendo no(a): <strong>${nac}!</strong></p>`
+            if (nac != 'Brasil') {
+                res.innerHTML += `<p>Você é um <strong>Estrangeiro!<strong></p>`
+                res.innerHTML += `<p>Seja muito Bem Vindo(a) ao nosso território!</p>`
+           }
+        }
+    }
+    </script>
+</body>
+</html>
